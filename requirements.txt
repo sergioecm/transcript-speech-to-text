@@ -1,0 +1,7 @@
+faster-whisper>=1.1,<2
+# worker_asr entrega un ndarray y evita el decode_audio incompatible con PyAV 19.
+av>=11,<20
+ollama>=0.4,<1
+openai>=1,<3
+nvidia-cublas-cu12>=12,<13
+nvidia-cudnn-cu12>=9,<10
