@@ -35,7 +35,7 @@ cp .env.example .env
 # Opcional: edite .env con sus credenciales, sin almacenarlas en código ni en control de versiones.
 set -a; source .env; set +a
 
-python3.12 -m app.main transcribe /home/sergio/Vídeos/Kooha/parte_exacta_000.mp3 --output /home/sergio/Vídeos/Kooha/outputs/transcripcion1
+python3.12 -m app.main transcribe /home/{USER}/Vídeos/Kooha/parte_exacta_000.mp3 --output /home/{USER}/Vídeos/Kooha/outputs/transcripcion1
 
 python -m app.main transcribe entrada.mp4 --output outputs/transcripcion1
 python -m app.main transcribe entrada.webm --output outputs/transcripcion2 --engine groq --allow-cloud
